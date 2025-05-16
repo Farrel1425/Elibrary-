@@ -7,7 +7,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086
 class MemberController extends Controller
 {
     /**
@@ -15,7 +18,11 @@ class MemberController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
          $members = Member::query()
+=======
+        $members = Member::query()
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086
             ->when(request('search'), function($query) {
                 $query->where('name', 'like', '%'.request('search').'%')
                     ->orWhere('member_id', 'like', '%'.request('search').'%');
@@ -44,7 +51,11 @@ class MemberController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
          $validated = $request->validate([
+=======
+        $validated = $request->validate([
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086
             'member_id' => 'required|unique:members',
             'name' => 'required|max:100',
             'email' => 'required|email|unique:members',
@@ -69,32 +80,49 @@ class MemberController extends Controller
     /**
      * Display the specified resource.
      */
+<<<<<<< HEAD
     public function show(string $id)
     {
         $member = Member::findOrFail($id);
         
         return view('members.show', compact('member'));
 
+=======
+    public function show(Member $member)
+    {
+        return view('members.show', compact('member'));
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086
     }
 
     /**
      * Show the form for editing the specified resource.
      */
+<<<<<<< HEAD
     public function edit(string $id)
     {
         $member = Member::findOrFail($id);
 
+=======
+    public function edit(Member $member)
+    {
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086
         return view('members.edit', compact('member'));
     }
 
     /**
      * Update the specified resource in storage.
      */
+<<<<<<< HEAD
     public function update(Request $request, string $id)
     {
         $member = Member::findOrFail($id);
 
          $validated = $request->validate([
+=======
+    public function update(Request $request, Member $member)
+    {
+        $validated = $request->validate([
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086
             'member_id' => [
                 'required',
                 Rule::unique('members')->ignore($member->id)
@@ -130,9 +158,14 @@ class MemberController extends Controller
     /**
      * Remove the specified resource from storage.
      */
+<<<<<<< HEAD
     public function destroy(string $id)
     {
         $member = Member::findOrFail($id);
+=======
+    public function destroy(Member $member)
+    {
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086
         // Hapus foto jika ada
         if ($member->photo_path) {
             Storage::disk('public')->delete($member->photo_path);
@@ -143,4 +176,8 @@ class MemberController extends Controller
         return redirect()->route('members.index')
             ->with('success', 'Anggota berhasil dihapus');
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086

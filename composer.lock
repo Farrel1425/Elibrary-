@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "d6c083b04e73afd8ea1cc978bddab18d",
+=======
+    "content-hash": "c6cd328085dadf23e81919da5f68e814",
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086
     "packages": [
         {
             "name": "brick/math",
@@ -1456,6 +1460,72 @@
             "time": "2025-01-27T14:24:01+00:00"
         },
         {
+<<<<<<< HEAD
+=======
+            "name": "laravel/ui",
+            "version": "v4.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "7d6ffa38d79f19c9b3e70a751a9af845e8f41d88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/7d6ffa38d79f19c9b3e70a751a9af845e8f41d88",
+                "reference": "7d6ffa38d79f19c9b3e70a751a9af845e8f41d88",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^9.21|^10.0|^11.0|^12.0",
+                "illuminate/filesystem": "^9.21|^10.0|^11.0|^12.0",
+                "illuminate/support": "^9.21|^10.0|^11.0|^12.0",
+                "illuminate/validation": "^9.21|^10.0|^11.0|^12.0",
+                "php": "^8.0",
+                "symfony/console": "^6.0|^7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.35|^8.15|^9.0|^10.0",
+                "phpunit/phpunit": "^9.3|^10.4|^11.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/ui/tree/v4.6.1"
+            },
+            "time": "2025-01-28T15:15:29+00:00"
+        },
+        {
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086
             "name": "league/commonmark",
             "version": "2.7.0",
             "source": {
@@ -5974,6 +6044,7 @@
             "time": "2025-04-30T06:54:44+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "laravel/breeze",
             "version": "v2.3.6",
             "source": {
@@ -6113,6 +6184,8 @@
             "time": "2025-01-28T15:15:15+00:00"
         },
         {
+=======
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086
             "name": "laravel/pint",
             "version": "v1.22.1",
             "source": {
@@ -6180,6 +6253,7 @@
         },
         {
             "name": "laravel/sail",
+<<<<<<< HEAD
             "version": "v1.43.0",
             "source": {
                 "type": "git",
@@ -6190,6 +6264,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/sail/zipball/71a509b14b2621ce58574274a74290f933c687f7",
                 "reference": "71a509b14b2621ce58574274a74290f933c687f7",
+=======
+            "version": "v1.42.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/sail.git",
+                "reference": "2edaaf77f3c07a4099965bb3d7dfee16e801c0f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/2edaaf77f3c07a4099965bb3d7dfee16e801c0f6",
+                "reference": "2edaaf77f3c07a4099965bb3d7dfee16e801c0f6",
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086
                 "shasum": ""
             },
             "require": {
@@ -6239,7 +6325,11 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
+<<<<<<< HEAD
             "time": "2025-05-13T13:34:34+00:00"
+=======
+            "time": "2025-04-29T14:26:46+00:00"
+>>>>>>> 077f2ba7555bf4d01cbea2e7efd19cf3d7a1f086
         },
         {
             "name": "mockery/mockery",
